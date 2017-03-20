@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp" />
+
+    <EditText
+        android:id="@+id/et_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Recipe name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/et_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Labels"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/et_recipe"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/explaination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example: #LabelA#LabelB#LabelC"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The label could include: \n ingredients, tools, or anyother options"
+        android:layout_above="@+id/explaination"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
