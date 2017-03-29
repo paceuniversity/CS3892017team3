@@ -23,7 +23,7 @@ public class Upload extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
 
-        main_ref = new Firebase("https://homechefparty.firebaseio.com/recipes");
+        main_ref = new Firebase("https://homechefparty-e0f77.firebaseio.com/");
         recipe_upload = (Button)findViewById(R.id.bt_upload);
         recipe_name = (EditText)findViewById(R.id.et_recipe);
         recipe_label = (EditText)findViewById(R.id.et_labels);

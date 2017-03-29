@@ -1,4 +1,4 @@
-package com.example.daniel.chinesefood;
+package com.example.pc.homechefparty;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

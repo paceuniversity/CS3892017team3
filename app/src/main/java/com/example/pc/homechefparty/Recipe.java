@@ -6,7 +6,7 @@ import java.util.List;
  * Created by Daniel on 3/27/2017.
  */
 
-public class Recipe {
+public class  Recipe {
 
     private int cookTime;
     private int prepTime;
