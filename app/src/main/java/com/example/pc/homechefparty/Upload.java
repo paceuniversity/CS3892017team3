@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.firebase.client.Firebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by pc on 2017/3/19.
@@ -18,6 +20,9 @@ public class Upload extends Activity {
     EditText recipe_name;
     EditText recipe_label;
     Firebase main_ref;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = database.getReference();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +38,10 @@ public class Upload extends Activity {
             public void onClick(View view) {
                String getvalue_name = recipe_name.getText().toString();
                 String getvalue_label = recipe_label.getText().toString();
-               Firebase childRef = main_ref.child(getvalue_name);
-                childRef.setValue(getvalue_label);
+                Recipe r = new Recipe();
+                r.setRecipeName(getvalue_name);
+                databaseReference.child("Recipes").push().setValue(r);
+
 
 
                 ;
