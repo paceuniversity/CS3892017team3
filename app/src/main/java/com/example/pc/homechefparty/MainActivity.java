@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }else if(id == R.id.action_upload){
-            Intent intent = new Intent(this,Uploadrecipe.class);
+            Intent intent = new Intent(this,Upload.class);
             startActivity(intent);
         }
 
