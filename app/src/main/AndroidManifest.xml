@@ -3,6 +3,9 @@
     package="com.example.pc.homechefparty">
 <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-sdk android:minSdkVersion="14"
+        android:targetSdkVersion="19"
+        android:maxSdkVersion="26" />
     <application
         android:name=".HomeChefParty"
         android:allowBackup="true"
@@ -22,8 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Search"
+            android:label="HomeChefParty"/>
         <activity android:name=".Upload" />
-        <activity android:name=".Uploadrecipe"></activity>
+        <activity android:name=".Uploadrecipe"/>
     </application>
 
 </manifest>
