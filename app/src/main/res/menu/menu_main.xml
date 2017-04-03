@@ -12,4 +12,10 @@
         android:orderInCategory="100"
         android:title="Upload recipe"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search recipe"
+        app:showAsAction="never" />
+
 </menu>
