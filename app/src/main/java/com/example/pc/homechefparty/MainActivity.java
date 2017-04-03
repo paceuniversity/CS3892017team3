@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-
 import com.firebase.client.Firebase;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,Upload.class);
             startActivity(intent);
         }
+        else if (id == R.id.action_search){
+            Intent intent = new Intent(this,Search.class);
+            startActivity(intent);
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

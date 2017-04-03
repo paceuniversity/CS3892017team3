@@ -1,46 +1,54 @@
 package com.example.pc.homechefparty;
 
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.TextView;
 
-import com.example.pc.homechefparty.R;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Search extends AppCompatActivity {
 
-    ArrayAdapter<String> adapter;
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("recipeName");
-    List<String> recipeNames = new ArrayList<String>();
-    @Override
+
+    private DatabaseReference databaseReference;
+    private ArrayAdapter<String> adapter;
+    private ArrayList<String> recipeNames = new ArrayList<String>();
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
          ListView lv = (ListView) findViewById(R.id.ListView);
-        myRef.addChildEventListener(new ChildEventListener() {
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, recipeNames);
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
+        databaseReference.orderByChild("recipeName").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                Recipe value = dataSnapshot.getValue(Recipe.class);
 
-                Recipe recipe = dataSnapshot.getValue(Recipe.class);
-                recipeNames.add(recipe.getRecipeName());
+                recipeNames.add(value.getRecipeName());
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -64,8 +72,12 @@ public class Search extends AppCompatActivity {
             }
         });
 
-        adapter = new ArrayAdapter(Search.this, android.R.layout.simple_list_item_1, recipeNames);
         lv.setAdapter(adapter);
+
+
+
+
+
 
 
 
@@ -76,8 +88,7 @@ public class Search extends AppCompatActivity {
 
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_search, menu);
-        MenuItem item = menu.findItem(R.id.menuSearch);
-        SearchView searchView = (SearchView) item.getActionView();
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.menuSearch));
 
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

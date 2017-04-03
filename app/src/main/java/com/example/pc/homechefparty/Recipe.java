@@ -8,8 +8,8 @@ import java.util.List;
 
 public class  Recipe {
 
-    private int cookTime;
-    private int prepTime;
+    private String cookTime;
+    private String prepTime;
     private String recipeName;
     private List<String> labels;
     private List<String> recipeSteps;
@@ -18,7 +18,7 @@ public class  Recipe {
 
     public Recipe(){}
 
-    public Recipe(int cookTime, int prepTime, String recipeName, List<String> labels, List<String> recipeSteps, List<String> ingredients){
+    public Recipe(String cookTime, String prepTime, String recipeName, List<String> labels, List<String> recipeSteps, List<String> ingredients){
 
         this.cookTime = cookTime;
         this.prepTime = prepTime;
@@ -28,17 +28,17 @@ public class  Recipe {
         this.ingredientsList = ingredientsList;
     }
 
-    public int getCookTime(){
+    public String getCookTime(){
         return cookTime;
     }
 
-    public void setCookTime(int cookTime) {this.cookTime=cookTime;}
+    public void setCookTime(String cookTime) {this.cookTime=cookTime;}
 
-    public int getPrepTime(){
+    public String getPrepTime(){
         return prepTime;
     }
 
-    public void setPrepTime(int prepTime) {this.prepTime=prepTime; }
+    public void setPrepTime(String prepTime) {this.prepTime=prepTime; }
 
     public String getRecipeName(){
         return recipeName;
