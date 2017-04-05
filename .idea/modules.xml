@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HomeChefParty.iml" filepath="$PROJECT_DIR$/HomeChefParty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS3892017team3-master.iml" filepath="$PROJECT_DIR$/CS3892017team3-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

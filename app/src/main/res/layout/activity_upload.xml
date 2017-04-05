@@ -1,99 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/prepTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="preptime (minutes)"
+        android:layout_above="@+id/ingredients"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/bt_addimage"
+            android:layout_width="142dp"
+            android:layout_height="146dp"
+            android:text="Button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/et_recipe"
+            android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/recipeSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input recipe steps"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/bt_upload"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp" />
+
+    <EditText
+        android:id="@+id/cookTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="cooktime (minutes)"
+        android:layout_above="@+id/prepTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/et_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Recipe Name"
+        android:inputType="textPersonName"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/bt_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-            <EditText
-                android:id="@+id/et_recipe"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="22dp"
-                android:ems="10"
-                android:hint="Recipe Name"
-                android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input ingredients"
+        android:inputType="textMultiLine"
+        android:layout_alignBottom="@+id/recipeSteps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp" />
 
-            <EditText
-                android:id="@+id/et_labels"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/et_recipe"
-                android:layout_marginTop="70dp"
-                android:ems="10"
-                android:hint="Labels"
-                android:inputType="textPersonName" />
+    </RelativeLayout>
 
-            <TextView
-                android:id="@+id/explaination"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:text="Example: #LabelA#LabelB#LabelC" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/explaination"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="15dp"
-                android:text="The label could include: \n ingredients, tools, or anyother options" />
-
-            <EditText
-                android:id="@+id/cookTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/explaination"
-                android:layout_marginTop="25dp"
-                android:hint="cooktime (minutes)" />
-
-            <EditText
-                android:id="@+id/prepTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="preptime (minutes)" />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <EditText
-                android:id="@+id/recipeSteps"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/bt_upload"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="18dp"
-                android:ems="10"
-                android:hint="Input recipe steps"
-                android:inputType="textMultiLine" />
-
-            <Button
-                android:id="@+id/bt_upload"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="Upload" />
-
-        </LinearLayout>
-    </ScrollView>
-
-
-</RelativeLayout>
+</ScrollView>
