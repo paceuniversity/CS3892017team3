@@ -40,11 +40,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         progressDialog = new ProgressDialog(this);
 
-        buttonRegister = (Button) findViewById(R.id.buttonRegister);
+        //buttonRegister = (Button) findViewById(R.id.buttonRegister);
 
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        getEditTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        textViewSignin = (TextView) findViewById((R.id.textViewSignIn));
+        //editTextEmail = (EditText) findViewById(R.id.editTextEmail);
+        //getEditTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        //textViewSignin = (TextView) findViewById((R.id.textViewSignIn));
 
         buttonRegister.setOnClickListener(this);
         textViewSignin.setOnClickListener(this);
