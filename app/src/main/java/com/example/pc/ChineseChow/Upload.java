@@ -37,8 +37,8 @@ public class Upload extends Activity {
     Firebase main_ref;
     ImageButton selectimage;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference databaseReference = database.getReference();
-
+    DatabaseReference databaseReference;
+    String downloadUri_string;
     private static final int imagerequest = 1;
     private Uri mimageUri=null;
     private StorageReference mStorage;
@@ -51,7 +51,7 @@ public class Upload extends Activity {
         setContentView(R.layout.activity_upload);
 
         mStorage = FirebaseStorage.getInstance().getReference();
-
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Recipes");
         selectimage = (ImageButton)findViewById(R.id.bt_addimage);
 
         main_ref = new Firebase("https://homechefparty-e0f77.firebaseio.com/");
@@ -75,23 +75,33 @@ public class Upload extends Activity {
         recipe_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                final String getrecipeName = recipe_name.getText().toString();
+                final String getcookTime = cookTime.getText().toString();
+                final String getprepTime = prepTime.getText().toString();
+                final String getRecipeSteps = recipeSteps.getText().toString();
+                final String getIngredient = ingredients.getText().toString();
+
+
                 if(mimageUri!=null){
                     StorageReference filepath =  mStorage.child("Recipe_Images").child(mimageUri.getLastPathSegment());
                     filepath.putFile(mimageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            @SuppressWarnings("VisibleForTests")Uri downloadUri = taskSnapshot.getDownloadUrl();
-                            databaseReference.child("Recipes").push().setValue(downloadUri.toString());
+                            @SuppressWarnings("VisibleForTests") Uri fromgallary  = taskSnapshot.getDownloadUrl();
+
+                            DatabaseReference newpost = databaseReference.push();
+                            downloadUri_string = fromgallary.toString();
+                            newpost.child("ImageUri").setValue(fromgallary.toString());
+                            newpost.child("recipeName").setValue(getrecipeName);
+                            newpost.child("Cook Time").setValue(getcookTime);
+                            newpost.child("prepTime").setValue(getprepTime);
+                            newpost.child("Recipe Steps").setValue(getRecipeSteps);
+                            newpost.child("Ingredients").setValue(getIngredient);
                         }
                     });
                 }
-
-                String getrecipeName = recipe_name.getText().toString();
-                String getcookTime = cookTime.getText().toString();
-                String getprepTime = prepTime.getText().toString();
-                String getRecipeSteps = recipeSteps.getText().toString();
-                String getIngredient = ingredients.getText().toString();
-
                 Recipe r = new Recipe();
 
                 r.setIngredients(getIngredient);
@@ -99,7 +109,7 @@ public class Upload extends Activity {
                 r.setCookTime(getcookTime);
                 r.setPrepTime(getprepTime);
                 r.setRecipeSteps(getRecipeSteps);
-                databaseReference.child("Recipes").push().setValue(r);
+                r.setImageUri(downloadUri_string);
 
 
 

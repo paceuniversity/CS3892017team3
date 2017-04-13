@@ -36,7 +36,7 @@ public class Search extends AppCompatActivity {
         DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
 
 
-        databaseReference.orderByChild("recipeName").addChildEventListener(new ChildEventListener() {
+        databaseReference.orderByChild("Name").addChildEventListener(new ChildEventListener() {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
 

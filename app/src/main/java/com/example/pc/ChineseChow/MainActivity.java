@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -13,11 +15,15 @@ import android.view.MenuItem;
 import com.firebase.client.Firebase;
 
 public class MainActivity extends AppCompatActivity {
-
+    private RecyclerView mRecipe_list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mRecipe_list = (RecyclerView)findViewById(R.id.recipe_list);
+        mRecipe_list.setHasFixedSize(true);
+        mRecipe_list.setLayoutManager(new LinearLayoutManager(this));
+
 
         Firebase.setAndroidContext(this);
 
