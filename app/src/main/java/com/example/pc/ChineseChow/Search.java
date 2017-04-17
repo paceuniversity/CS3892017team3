@@ -1,11 +1,9 @@
 package com.example.pc.ChineseChow;
 
-<<<<<<< HEAD
+
 import android.content.Intent;
-=======
 import android.app.SearchManager;
 import android.content.Context;
->>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

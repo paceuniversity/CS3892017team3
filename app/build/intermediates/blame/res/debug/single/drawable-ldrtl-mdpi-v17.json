@@ -10,5 +10,17 @@
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     }
 ]
