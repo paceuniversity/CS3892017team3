@@ -47,7 +47,11 @@ public class GoogleSignIn extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
+        //mGoogleButton = (SignInButton) findViewById(R.id.googleBtn);
+=======
        // mGoogleButton = (SignInButton) findViewById(R.id.googleBtn);
+>>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -57,7 +61,11 @@ public class GoogleSignIn extends AppCompatActivity{
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null)
                 {
+<<<<<<< HEAD
+                    //startActivity(GoogleSignIn.this, AccountActivity.class);
+=======
                    // startActivity(GoogleSignIn.this, AccountActivity.class);
+>>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
                 }
 
             }

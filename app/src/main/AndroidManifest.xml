@@ -31,6 +31,11 @@
         <activity android:name="com.example.pc.ChineseChow.Upload"
             android:windowSoftInputMode="adjustPan"
             />
+<<<<<<< HEAD
+        <activity android:name="com.example.pc.ChineseChow.Uploadrecipe"/>
+        <activity android:name="com.example.pc.ChineseChow.Test"/>
+=======
+>>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
     </application>
 
 </manifest>

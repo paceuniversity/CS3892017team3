@@ -76,7 +76,7 @@ public class  Recipe {
         return imageUri;
     }
 
-    public void setImageUri(String servingSize) {
+    public void setImageUri(String imageUri) {
         this.imageUri = imageUri;
     }
 }

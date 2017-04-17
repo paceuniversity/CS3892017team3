@@ -1,12 +1,19 @@
 package com.example.pc.ChineseChow;
 
+<<<<<<< HEAD
+import android.content.Intent;
+=======
 import android.app.SearchManager;
 import android.content.Context;
+>>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -68,7 +75,16 @@ public class Search extends AppCompatActivity {
         });
 
         lv.setAdapter(adapter);
-
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String recipeName = (String)adapterView.getItemAtPosition(i);
+                String link = Upload.map.get(recipeName);
+                Intent intent = new Intent(Search.this,Test.class);
+                intent.putExtra("link",link);
+                startActivity(intent);
+            }
+        });
 
 
 
