@@ -23,6 +23,7 @@ import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecipe_list;
+    private LinearLayoutManager mLayoutManager;
     private DatabaseReference mdatabase;
     @Override
     protected void onStart() {
@@ -51,9 +52,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mdatabase = FirebaseDatabase.getInstance().getReference().child("Recipes");
+        mLayoutManager = new LinearLayoutManager(MainActivity.this);
+        mLayoutManager.setReverseLayout(true);
+        mLayoutManager.setStackFromEnd(true);
        mRecipe_list = (RecyclerView)findViewById(R.id.recipe_list);
        mRecipe_list.setHasFixedSize(true);
-       mRecipe_list.setLayoutManager(new LinearLayoutManager(this));
+       mRecipe_list.setLayoutManager(mLayoutManager);
+
 
 
        Firebase.setAndroidContext(this);

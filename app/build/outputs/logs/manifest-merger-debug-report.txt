@@ -31,6 +31,8 @@ MERGED from [com.google.firebase:firebase-storage:10.2.0] D:\Android\.android\bu
 MERGED from [com.google.firebase:firebase-storage-common:10.2.0] D:\Android\.android\build-cache\f1b830a2fb5c3b44001e98a1c66bd66380fecf75\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-crash:10.2.0] D:\Android\.android\build-cache\14f312912a84ab10232240256b16292fc46a203a\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth:10.2.0] D:\Android\.android\build-cache\e513aa169d2c265b9b38334f6b6cfeb864feee56\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] D:\Android\.android\build-cache\9a0eaf1a8f675557e51a08b30bd18327e252a8e5\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base:10.2.0] D:\Android\.android\build-cache\c4df90d07f00daad42a878f0e7c6e3ca8fa27269\output\AndroidManifest.xml:17:5-43
 MERGED from [com.firebaseui:firebase-ui-database:1.2.0] D:\Android\.android\build-cache\2a195bc19c94181e7736ccb73dcab4cffa05cd0c\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:25.1.1] D:\Android\.android\build-cache\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\output\AndroidManifest.xml:21:5-23:78
@@ -72,6 +74,7 @@ MERGED from [com.android.support:design:25.0.1] D:\Android\.android\build-cache\
 MERGED from [com.android.support:transition:25.0.1] D:\Android\.android\build-cache\c1cb2c890ef7bd263406f25d02621adf13e856bc\output\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-crash:10.2.0] D:\Android\.android\build-cache\14f312912a84ab10232240256b16292fc46a203a\output\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-auth:10.2.0] D:\Android\.android\build-cache\e513aa169d2c265b9b38334f6b6cfeb864feee56\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:19:5-25:19
 MERGED from [com.google.android.gms:play-services-base:10.2.0] D:\Android\.android\build-cache\c4df90d07f00daad42a878f0e7c6e3ca8fa27269\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.firebaseui:firebase-ui-database:1.2.0] D:\Android\.android\build-cache\2a195bc19c94181e7736ccb73dcab4cffa05cd0c\output\AndroidManifest.xml:13:5-17:19
 MERGED from [com.android.support:appcompat-v7:25.1.1] D:\Android\.android\build-cache\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\output\AndroidManifest.xml:25:5-20
@@ -141,6 +144,24 @@ activity#com.example.pc.ChineseChow.Test
 ADDED from D:\2017spring\CS389\CS3892017team3-master\app\src\main\AndroidManifest.xml:35:9-67
 	android:name
 		ADDED from D:\2017spring\CS389\CS3892017team3-master\app\src\main\AndroidManifest.xml:35:19-65
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\AndroidManifest.xml:24:18-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:10.2.0] D:\Android\.android\build-cache\c4df90d07f00daad42a878f0e7c6e3ca8fa27269\output\AndroidManifest.xml:19:9-172
 	android:exported

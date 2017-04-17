@@ -3340,6 +3340,7 @@ containing a value of this type.
         public static final int bottom=0x7f0c002d;
         public static final int bt_addimage=0x7f0c0085;
         public static final int bt_submit=0x7f0c008b;
+        public static final int bt_tomain=0x7f0c00bb;
         public static final int bt_upload=0x7f0c0088;
         public static final int buttonPanel=0x7f0c0058;
         public static final int buttonRegister=0x7f0c009d;
@@ -3476,7 +3477,6 @@ containing a value of this type.
         public static final int textSpacerNoTitle=0x7f0c005e;
         public static final int textView=0x7f0c00b9;
         public static final int textView2=0x7f0c00ba;
-        public static final int textView3=0x7f0c00bb;
         public static final int text_input_password_toggle=0x7f0c0099;
         public static final int time=0x7f0c00ab;
         public static final int title=0x7f0c0057;

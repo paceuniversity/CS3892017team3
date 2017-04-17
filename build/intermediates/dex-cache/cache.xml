@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\pc\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jar="D:\Android\.android\build-cache\9a0eaf1a8f675557e51a08b30bd18327e252a8e5\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="D:\2017spring\CS389\CS3892017team3-master\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_27990f49107c7016c892ccf2411822dc29dbaab5.jar" />
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="D:\2017spring\CS389\CS3892017team3-master\app\build\intermediates\pre-dexed\debug\classes_54d0f7f76ef0e8e496326a8e7d2c5b7cec45b8f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\.android\build-cache\05d9bbd1279be789b351d0a292e4b908e9887d11\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="D:\2017spring\CS389\CS3892017team3-master\app\build\intermediates\pre-dexed\debug\classes_6c71ff3e692578d33ffba08a99f1a26f35cd48a0.jar" />
     </item>
 
 </items>

@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.firebase.client.DataSnapshot;
@@ -30,7 +32,10 @@ public class Test extends Activity {
     String recipeUrl;
     String recipeNamefromupload;
     private TextView recipeName;
+    TextView name;
+    TextView link;
     Firebase ref;
+    Button mtomain;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +43,20 @@ public class Test extends Activity {
         setContentView(R.layout.test);
 
         Bundle extras = getIntent().getExtras();
-        recipeUrl=extras.getString("linkForTest");
-        recipeNamefromupload = extras.getString("namefortest");
-        Log.i("recipe's link",recipeUrl);
-        Log.i("recipe's name",recipeNamefromupload);
-        map.put(recipeUrl,recipeNamefromupload);
-    /*    ref = new Firebase(recipeUrl);
-        ref.child("recipeName").addValueEventListener(new ValueEventListener() {
+        recipeUrl=extras.getString("link");
+
+
+      recipeName = (TextView)findViewById(R.id.textView) ;
+        mtomain = (Button)findViewById(R.id.bt_tomain);
+        mtomain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Test.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+      ref = new Firebase(recipeUrl);
+        ref.child("prepTime").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String value = dataSnapshot.getValue(String.class);
@@ -55,7 +67,7 @@ public class Test extends Activity {
             public void onCancelled(FirebaseError firebaseError) {
 
             }
-        });*/
+        });
 
 
 

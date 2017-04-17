@@ -32,7 +32,7 @@ import java.util.List;
 
 public class Upload extends Activity {
 
-    HashMap<String,String> map = new HashMap<String, String>();
+    public static HashMap<String,String> map = new HashMap<String, String>();
     Button recipe_upload;
     EditText ingredients;
     EditText recipeSteps;
@@ -124,11 +124,11 @@ public class Upload extends Activity {
                     Log.i("Uri",linkfortest);
                     Log.i("Uri",linkfortest);
                     Log.i("Uri",linkfortest);
-                    Intent i = new Intent(Upload.this,Test.class);
+                    /*Intent i = new Intent(Upload.this,Test.class);
                     i.putExtra("linkForTest",linkfortest);
                     i.putExtra("namefortest",getrecipeName);
-                    startActivity(i);
-
+                    startActivity(i); */
+                    map.put(getrecipeName,linkfortest);
 
 
                     downloadUri_string = fromgallary.toString();
