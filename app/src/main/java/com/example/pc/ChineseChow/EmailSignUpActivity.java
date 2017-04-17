@@ -8,8 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,11 +19,11 @@ import com.google.firebase.auth.FirebaseAuth;
  * Created by Daniel on 4/13/2017.
  */
 
-public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class EmailSignUpActivity extends AppCompatActivity implements View.OnClickListener {
     private Button buttonRegister;
     private EditText editTextEmail;
     private EditText getEditTextPassword;
-    private TextView textViewSignin;
+
 
     private ProgressDialog progressDialog;
 
@@ -40,14 +38,14 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         progressDialog = new ProgressDialog(this);
 
-        //buttonRegister = (Button) findViewById(R.id.buttonRegister);
+        buttonRegister = (Button) findViewById(R.id.buttonRegister);
 
-        //editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        //getEditTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        //textViewSignin = (TextView) findViewById((R.id.textViewSignIn));
+        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
+        getEditTextPassword = (EditText) findViewById(R.id.editTextPassword);
+
 
         buttonRegister.setOnClickListener(this);
-        textViewSignin.setOnClickListener(this);
+
     }
 
     private void registerUser() {
@@ -81,9 +79,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         if (task.isSuccessful()) {
 
                             // user is successfully registered and logged in
-                            Toast.makeText(SignUpActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EmailSignUpActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(SignUpActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EmailSignUpActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                         }
                         progressDialog.hide();
                     }
@@ -95,8 +93,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         if (view == buttonRegister)
             registerUser();
-        if (view == textViewSignin) ;
-        // open sign in activity
+
 
     }
 }

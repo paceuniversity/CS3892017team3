@@ -95,10 +95,10 @@ public class Upload extends Activity {
                             downloadUri_string = fromgallary.toString();
                             newpost.child("ImageUri").setValue(fromgallary.toString());
                             newpost.child("recipeName").setValue(getrecipeName);
-                            newpost.child("Cook Time").setValue(getcookTime);
+                            newpost.child("cookTime").setValue(getcookTime);
                             newpost.child("prepTime").setValue(getprepTime);
-                            newpost.child("Recipe Steps").setValue(getRecipeSteps);
-                            newpost.child("Ingredients").setValue(getIngredient);
+                            newpost.child("recipeSteps").setValue(getRecipeSteps);
+                            newpost.child("ingredientsList").setValue(getIngredient);
                         }
                     });
                 }
