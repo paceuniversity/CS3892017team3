@@ -8,22 +8,24 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/cookTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="40dp"/>
-
+        android:textSize="40dp" />
 
 
     <Button
         android:id="@+id/bt_tomain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="To main"
-        android:layout_weight="0.19" />
+        android:layout_weight="0.19"
+        android:text="To main" />
 </LinearLayout>

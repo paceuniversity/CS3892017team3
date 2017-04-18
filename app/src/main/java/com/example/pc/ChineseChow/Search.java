@@ -27,10 +27,10 @@ import java.util.ArrayList;
 public class Search extends AppCompatActivity {
 
 
-    private DatabaseReference databaseReference;
-    private ArrayAdapter<String> adapter;
-    private ArrayList<String> recipeNames = new ArrayList<String>();
 
+    public ArrayAdapter<String> adapter;
+    private ArrayList<String> recipeNames = new ArrayList<String>();
+    public static String recipeName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +40,10 @@ public class Search extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, recipeNames);
 
 
-        DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
+         DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
 
 
-        databaseReference.orderByChild("Name").addChildEventListener(new ChildEventListener() {
+        databaseReference.orderByChild("recipeName").addChildEventListener(new ChildEventListener() {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
 
@@ -76,10 +76,8 @@ public class Search extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String recipeName = (String)adapterView.getItemAtPosition(i);
-                String link = Upload.map.get(recipeName);
+                recipeName = (String)adapterView.getItemAtPosition(i);
                 Intent intent = new Intent(Search.this,Test.class);
-                intent.putExtra("link",link);
                 startActivity(intent);
             }
         });
