@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mRecipe_list.setAdapter(firebaseRecyclerAdapter);
+        firebaseRecyclerAdapter.notifyDataSetChanged();
     }
 
     @Override

@@ -57,14 +57,13 @@ public class Upload extends Activity {
         setContentView(R.layout.activity_upload);
 
 
-
         mStorage = FirebaseStorage.getInstance().getReference();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Recipes");
-        selectimage = (ImageButton)findViewById(R.id.bt_addimage);
+        selectimage = (ImageButton) findViewById(R.id.bt_addimage);
 
         main_ref = new Firebase("https://homechefparty-e0f77.firebaseio.com/");
-        recipe_upload = (Button)findViewById(R.id.bt_upload);
-        recipe_name = (EditText)findViewById(R.id.et_recipe);
+        recipe_upload = (Button) findViewById(R.id.bt_upload);
+        recipe_name = (EditText) findViewById(R.id.et_recipe);
         cookTime = (EditText) findViewById(R.id.cookTime);
         prepTime = (EditText) findViewById(R.id.prepTime);
         recipeSteps = (EditText) findViewById(R.id.recipeSteps);
@@ -82,17 +81,22 @@ public class Upload extends Activity {
 
         recipe_upload.setOnClickListener(new View.OnClickListener() {
             @Override
-
+<<<<<<< HEAD
+=======
             public void onClick(View view) {
 
+
+
+>>>>>>> 71f18f0ebb570a5df564d0d806f8d804cd02bf02
+
+
                 startposting();
-
             }
+
+            ;
+
+
         });
-
-
-
-
     }
 
     private void startposting(){
