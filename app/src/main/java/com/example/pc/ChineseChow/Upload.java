@@ -57,14 +57,13 @@ public class Upload extends Activity {
         setContentView(R.layout.activity_upload);
 
 
-
         mStorage = FirebaseStorage.getInstance().getReference();
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Recipes");
-        selectimage = (ImageButton)findViewById(R.id.bt_addimage);
+        selectimage = (ImageButton) findViewById(R.id.bt_addimage);
 
         main_ref = new Firebase("https://homechefparty-e0f77.firebaseio.com/");
-        recipe_upload = (Button)findViewById(R.id.bt_upload);
-        recipe_name = (EditText)findViewById(R.id.et_recipe);
+        recipe_upload = (Button) findViewById(R.id.bt_upload);
+        recipe_name = (EditText) findViewById(R.id.et_recipe);
         cookTime = (EditText) findViewById(R.id.cookTime);
         prepTime = (EditText) findViewById(R.id.prepTime);
         recipeSteps = (EditText) findViewById(R.id.recipeSteps);
@@ -82,56 +81,19 @@ public class Upload extends Activity {
 
         recipe_upload.setOnClickListener(new View.OnClickListener() {
             @Override
-<<<<<<< HEAD
-=======
             public void onClick(View view) {
 
 
-                final String getrecipeName = recipe_name.getText().toString();
-                final String getcookTime = cookTime.getText().toString();
-                final String getprepTime = prepTime.getText().toString();
-                final String getRecipeSteps = recipeSteps.getText().toString();
-                final String getIngredient = ingredients.getText().toString();
 
 
-                if(mimageUri!=null){
-                    StorageReference filepath =  mStorage.child("Recipe_Images").child(mimageUri.getLastPathSegment());
-                    filepath.putFile(mimageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            @SuppressWarnings("VisibleForTests") Uri fromgallary  = taskSnapshot.getDownloadUrl();
-
-                            DatabaseReference newpost = databaseReference.push();
-                            downloadUri_string = fromgallary.toString();
-                            newpost.child("ImageUri").setValue(fromgallary.toString());
-                            newpost.child("recipeName").setValue(getrecipeName);
-                            newpost.child("cookTime").setValue(getcookTime);
-                            newpost.child("prepTime").setValue(getprepTime);
-                            newpost.child("recipeSteps").setValue(getRecipeSteps);
-                            newpost.child("ingredientsList").setValue(getIngredient);
-                        }
-                    });
-                }
-                Recipe r = new Recipe();
-
-                r.setIngredients(getIngredient);
-                r.setRecipeName(getrecipeName);
-                r.setCookTime(getcookTime);
-                r.setPrepTime(getprepTime);
-                r.setRecipeSteps(getRecipeSteps);
-                r.setImageUri(downloadUri_string);
->>>>>>> b63282bf81fa36181f97e0994366c4dcac9ceefc
-
-            public void onClick(View view) {
 
                 startposting();
-
             }
+
+            ;
+
+
         });
-
-
-
-
     }
 
     private void startposting(){

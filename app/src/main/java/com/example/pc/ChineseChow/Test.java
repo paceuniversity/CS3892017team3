@@ -15,26 +15,26 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
 import com.firebase.client.ValueEventListener;
 import com.firebase.client.authentication.Constants;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
-import java.util.HashMap;
-import java.util.Map;
+import static com.example.pc.ChineseChow.Search.recipeName;
 
 /**
  * Created by pc on 2017/4/14.
  */
 
 public class Test extends Activity {
-    Map<String,String> map = new HashMap<String,String>();
-    String recipeUrl;
-    String recipeNamefromupload;
-    private TextView recipeName;
-    TextView name;
-    TextView link;
-    Firebase ref;
+
+    TextView nameofRecipe;
+    TextView cookTime;
+    TextView prepTime;
+    TextView recipeSteps;
+    TextView ingredients;
     Button mtomain;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,11 +42,12 @@ public class Test extends Activity {
 
         setContentView(R.layout.test);
 
-        Bundle extras = getIntent().getExtras();
-        recipeUrl=extras.getString("link");
 
 
-      recipeName = (TextView)findViewById(R.id.textView) ;
+        nameofRecipe = (TextView) (findViewById(R.id.textView));
+        cookTime = (TextView) (findViewById(R.id.textView2)) ;
+
+
         mtomain = (Button)findViewById(R.id.bt_tomain);
         mtomain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,19 +56,44 @@ public class Test extends Activity {
                 startActivity(i);
             }
         });
-      ref = new Firebase(recipeUrl);
-        ref.child("prepTime").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-            recipeName.setText(value);
+        DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
+
+        databaseReference.orderByChild("recipeName").equalTo(Search.recipeName).addChildEventListener(new ChildEventListener() {
+            public void onChildAdded(com.google.firebase.database.DataSnapshot dataSnapshot, String s) {
+                Recipe value = dataSnapshot.getValue(Recipe.class);
+                nameofRecipe.setText(value.getRecipeName());
+                cookTime.setText(value.getCookTime());
+
+
+
             }
 
             @Override
-            public void onCancelled(FirebaseError firebaseError) {
+            public void onChildChanged(com.google.firebase.database.DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(com.google.firebase.database.DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(com.google.firebase.database.DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
             }
         });
+
+
+
+
+
+
 
 
 

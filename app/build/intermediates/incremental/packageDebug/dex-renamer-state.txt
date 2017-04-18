@@ -1,4 +1,4 @@
-#Mon Apr 17 00:04:53 EDT 2017
-base.0=D\:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Tue Apr 18 16:48:54 EDT 2017
+base.0=C\:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=D\:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
