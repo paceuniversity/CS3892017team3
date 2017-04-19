@@ -125,7 +125,7 @@ public class Upload extends Activity {
                     Log.i("Uri",linkfortest);
                     Log.i("Uri",linkfortest);
                     Log.i("Uri",linkfortest);
-                    /*Intent i = new Intent(Upload.this,Test.class);
+                    /*Intent i = new Intent(Upload.this,ViewRecipeInSearch.class);
                     i.putExtra("linkForTest",linkfortest);
                     i.putExtra("namefortest",getrecipeName);
                     startActivity(i); */

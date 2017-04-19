@@ -32,7 +32,7 @@ public class EmailSignUpActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.emailsignup_activity);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -87,13 +87,14 @@ public class EmailSignUpActivity extends AppCompatActivity implements View.OnCli
                     }
                 });
 
+
+
     }
+
 
     @Override
     public void onClick(View view) {
         if (view == buttonRegister)
             registerUser();
-
-
     }
 }

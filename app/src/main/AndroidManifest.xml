@@ -31,8 +31,14 @@
         <activity android:name="com.example.pc.ChineseChow.Upload"
             android:windowSoftInputMode="adjustPan"
             />
+        <activity android:name="com.example.pc.ChineseChow.EmailSignUpActivity"
+            />
+        <activity android:name="com.example.pc.ChineseChow.GoogleSignIn"
+            />
+        <activity android:name="com.example.pc.ChineseChow.RecipeFeed"
+            />
 
-        <activity android:name="com.example.pc.ChineseChow.Test"/>
+        <activity android:name="com.example.pc.ChineseChow.ViewRecipeInSearch"/>
 
     </application>
 

@@ -4,6 +4,14 @@
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
