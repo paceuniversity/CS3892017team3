@@ -3320,11 +3320,11 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c006e;
         public static final int action_mode_bar_stub=0x7f0c006d;
         public static final int action_mode_close_button=0x7f0c0050;
-        public static final int action_search=0x7f0c00bb;
-        public static final int action_settings=0x7f0c00b9;
-        public static final int action_test=0x7f0c00bc;
+        public static final int action_search=0x7f0c00bc;
+        public static final int action_settings=0x7f0c00ba;
+        public static final int action_test=0x7f0c00bd;
         public static final int action_text=0x7f0c009f;
-        public static final int action_upload=0x7f0c00ba;
+        public static final int action_upload=0x7f0c00bb;
         public static final int actions=0x7f0c00ad;
         public static final int activity_chooser_view_content=0x7f0c0051;
         public static final int activity_main=0x7f0c0097;
@@ -3339,7 +3339,7 @@ containing a value of this type.
         public static final int beginning=0x7f0c003e;
         public static final int bottom=0x7f0c002d;
         public static final int bt_addimage=0x7f0c0085;
-        public static final int bt_tomain=0x7f0c00b8;
+        public static final int bt_tomain=0x7f0c00b9;
         public static final int bt_upload=0x7f0c0088;
         public static final int buttonPanel=0x7f0c0058;
         public static final int buttonRegister=0x7f0c009a;
@@ -3395,6 +3395,7 @@ containing a value of this type.
         public static final int info=0x7f0c00aa;
         public static final int ingredients=0x7f0c0084;
         public static final int item_touch_helper_previous_elevation=0x7f0c0006;
+        public static final int iv_image_recipe=0x7f0c00b8;
         public static final int largeLabel=0x7f0c008c;
         public static final int left=0x7f0c0033;
         public static final int light=0x7f0c004b;
@@ -3403,7 +3404,7 @@ containing a value of this type.
         public static final int listMode=0x7f0c0017;
         public static final int list_item=0x7f0c0055;
         public static final int media_actions=0x7f0c00a3;
-        public static final int menuSearch=0x7f0c00bd;
+        public static final int menuSearch=0x7f0c00be;
         public static final int middle=0x7f0c003f;
         public static final int mini=0x7f0c003d;
         public static final int multiply=0x7f0c0026;

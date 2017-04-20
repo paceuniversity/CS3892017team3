@@ -792,11 +792,11 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c006e
 int id action_mode_bar_stub 0x7f0c006d
 int id action_mode_close_button 0x7f0c0050
-int id action_search 0x7f0c00bb
-int id action_settings 0x7f0c00b9
-int id action_test 0x7f0c00bc
+int id action_search 0x7f0c00bc
+int id action_settings 0x7f0c00ba
+int id action_test 0x7f0c00bd
 int id action_text 0x7f0c009f
-int id action_upload 0x7f0c00ba
+int id action_upload 0x7f0c00bb
 int id actions 0x7f0c00ad
 int id activity_chooser_view_content 0x7f0c0051
 int id activity_main 0x7f0c0097
@@ -811,7 +811,7 @@ int id basic 0x7f0c0014
 int id beginning 0x7f0c003e
 int id bottom 0x7f0c002d
 int id bt_addimage 0x7f0c0085
-int id bt_tomain 0x7f0c00b8
+int id bt_tomain 0x7f0c00b9
 int id bt_upload 0x7f0c0088
 int id buttonPanel 0x7f0c0058
 int id buttonRegister 0x7f0c009a
@@ -867,6 +867,7 @@ int id image 0x7f0c0053
 int id info 0x7f0c00aa
 int id ingredients 0x7f0c0084
 int id item_touch_helper_previous_elevation 0x7f0c0006
+int id iv_image_recipe 0x7f0c00b8
 int id largeLabel 0x7f0c008c
 int id left 0x7f0c0033
 int id light 0x7f0c004b
@@ -875,7 +876,7 @@ int id line3 0x7f0c00b1
 int id listMode 0x7f0c0017
 int id list_item 0x7f0c0055
 int id media_actions 0x7f0c00a3
-int id menuSearch 0x7f0c00bd
+int id menuSearch 0x7f0c00be
 int id middle 0x7f0c003f
 int id mini 0x7f0c003d
 int id multiply 0x7f0c0026

@@ -81,19 +81,20 @@ public class Upload extends Activity {
 
         recipe_upload.setOnClickListener(new View.OnClickListener() {
             @Override
-<<<<<<< HEAD
-=======
+
             public void onClick(View view) {
 
 
 
->>>>>>> 71f18f0ebb570a5df564d0d806f8d804cd02bf02
 
 
                 startposting();
+
             }
 
-            ;
+
+
+
 
 
         });
@@ -117,7 +118,7 @@ public class Upload extends Activity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     @SuppressWarnings("VisibleForTests") Uri fromgallary  = taskSnapshot.getDownloadUrl();
-                    progressdialog.dismiss();
+
 
                     DatabaseReference newpost = databaseReference.push();
                     linkfortest = newpost.getRef().toString();
@@ -156,9 +157,10 @@ public class Upload extends Activity {
         r.setRecipeSteps(getRecipeSteps);
         r.setImageUri(downloadUri_string);
 
+        progressdialog.dismiss();
 
-
-
+        Intent intent = new Intent(Upload.this,MainActivity.class);
+        startActivity(intent);
 
 
     }

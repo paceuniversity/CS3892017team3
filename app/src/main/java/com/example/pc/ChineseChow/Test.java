@@ -1,12 +1,14 @@
 package com.example.pc.ChineseChow;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.firebase.client.DataSnapshot;
@@ -19,6 +21,7 @@ import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -36,6 +39,9 @@ public class Test extends Activity {
     TextView recipeSteps;
     TextView ingredients;
     Button mtomain;
+    ImageView image;
+    Context context;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +52,7 @@ public class Test extends Activity {
 
         nameofRecipe = (TextView) (findViewById(R.id.textView));
         cookTime = (TextView) (findViewById(R.id.textView2)) ;
-
+        image = (ImageView)findViewById(R.id.iv_image_recipe);
 
         mtomain = (Button)findViewById(R.id.bt_tomain);
         mtomain.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +69,7 @@ public class Test extends Activity {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
                 nameofRecipe.setText(value.getRecipeName());
                 cookTime.setText(value.getCookTime());
-
+                Picasso.with(getApplicationContext()).load(value.getImageUri()).into(image);
 
 
             }
