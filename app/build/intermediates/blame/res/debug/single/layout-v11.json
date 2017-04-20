@@ -5,35 +5,55 @@
     },
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
         "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_template_big_media.xml"
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media.xml"
     },
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
         "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
@@ -41,10 +61,38 @@
     },
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\21997bf159cae9d946610831933a9638fb513ee7\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
         "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "D:\\Android\\.android\\build-cache\\3053b4fe3a76f213e57ccee4ac29fc4ae4454420\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\9e2dc6afcde713c0788701054fb5a46a88f62400\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\e1f2fd6e6b15869509062dfd325bdd13983f8e5a\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
     }
 ]

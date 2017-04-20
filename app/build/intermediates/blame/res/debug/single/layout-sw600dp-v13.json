@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\Turmateniri\\Documents\\Github\\CS3892017team3-master (2)\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Turmateniri\\.android\\build-cache\\0bb03cb327aea2a6eb3119f803cac90f415bbea4\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Daniel\\.android\\build-cache\\7ac39e6cd09bc2d23c4edacc6c618139c005e75d\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\210edcd8f4ea37350d9ba24c378a26e382580801\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\Github\\project cs488\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Daniel\\.android\\build-cache\\210edcd8f4ea37350d9ba24c378a26e382580801\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
         "merged": "D:\\2017spring\\CS389\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",

@@ -7,7 +7,6 @@ import android.content.Context;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -42,6 +41,7 @@ public class Search extends AppCompatActivity {
 
          DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
 
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         databaseReference.orderByChild("recipeName").addChildEventListener(new ChildEventListener() {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -77,7 +77,7 @@ public class Search extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 recipeName = (String)adapterView.getItemAtPosition(i);
-                Intent intent = new Intent(Search.this,Test.class);
+                Intent intent = new Intent(Search.this,ViewRecipeInSearch.class);
                 startActivity(intent);
             }
         });
