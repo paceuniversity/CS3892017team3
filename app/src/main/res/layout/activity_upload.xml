@@ -20,7 +20,7 @@
 
         <ImageButton
             android:id="@+id/bt_addimage"
-            android:layout_width="142dp"
+            android:layout_width="256dp"
             android:layout_height="146dp"
             android:text="Button"
             app:layout_constraintTop_toTopOf="parent"
