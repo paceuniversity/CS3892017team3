@@ -67,12 +67,7 @@ public class Upload extends Activity {
 
             }
 
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 068e18a147e09b135708fcff88c4368569d6cbf7
 
 
         });
@@ -101,13 +96,13 @@ public class Upload extends Activity {
             filepath.putFile(mimageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-<<<<<<< HEAD
+
                     @SuppressWarnings("VisibleForTests") Uri fromgallery  = taskSnapshot.getDownloadUrl();
                     progressdialog.dismiss();
-=======
+
                     @SuppressWarnings("VisibleForTests") Uri fromgallary  = taskSnapshot.getDownloadUrl();
 
->>>>>>> 068e18a147e09b135708fcff88c4368569d6cbf7
+
 
                     DatabaseReference newpost = databaseReference.push();
                     linkfortest = newpost.getRef().toString();
