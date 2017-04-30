@@ -60,7 +60,7 @@ public class ViewRecipeInSearch extends Activity {
                 cookTime.setText(value.getCookTime());
                 prepTime.setText(value.getPrepTime());
                 recipeSteps.setText(value.getRecipeSteps());
-                ingredients.setText(value.getIngredients());
+                //ingredients.setText(value.getIngredients());
 
 
 

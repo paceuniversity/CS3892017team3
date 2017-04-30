@@ -1,5 +1,6 @@
 package com.example.pc.ChineseChow;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,12 +13,12 @@ public class  Recipe {
     private String prepTime;
     private String recipeName;
     private String recipeSteps;
-    private String ingredientsList;
+    private ArrayList<String> ingredientsList;
     private String servingSize;
     private String imageUri;
     public Recipe(){}
 
-    public Recipe(String cookTime, String prepTime, String recipeName, String recipeSteps, String ingredientsList, String servingSize, String imageUri){
+    public Recipe(String cookTime, String prepTime, String recipeName, String recipeSteps, ArrayList<String> ingredientsList, String servingSize, String imageUri){
 
         this.cookTime = cookTime;
         this.prepTime = prepTime;
@@ -56,9 +57,9 @@ public class  Recipe {
         this.recipeSteps = recipeStep;
     }
 
-    public String getIngredients() { return ingredientsList; }
+    public ArrayList<String> getIngredients() { return ingredientsList; }
 
-    public void setIngredients(String ingredientsList)
+    public void setIngredients(ArrayList ingredientsList)
     {
         this.ingredientsList = ingredientsList;
     }

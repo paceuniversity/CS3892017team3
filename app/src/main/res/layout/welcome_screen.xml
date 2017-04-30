@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             android:gravity="center_vertical|center_horizontal"
-            android:text="WELCOME TO CHINA CHOW"
+            android:text="WELCOME TO CHINESE CHOW"
             android:textSize="24sp" />
 
         <Button
