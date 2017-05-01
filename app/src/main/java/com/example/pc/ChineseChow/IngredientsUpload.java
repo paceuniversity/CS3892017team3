@@ -23,6 +23,7 @@ public class IngredientsUpload extends Activity {
     Button addIngredient;
     Button buttonNext;
     ArrayList<String> ingredients;
+    EditText editText;
 
 
     @Override
@@ -41,11 +42,9 @@ public class IngredientsUpload extends Activity {
             @Override
             public void onClick(View view) {
                 totalEditTexts++;
-                EditText editText = new EditText(IngredientsUpload.this);
+                editText = new EditText(IngredientsUpload.this);
                 editText.setTag("ingredient" + totalEditTexts);
                 container.addView(editText);
-                ingredients.add(editText.getText().toString());
-                Log.e("ingredient",editText.getText().toString());
 
             }
         });
@@ -53,6 +52,11 @@ public class IngredientsUpload extends Activity {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                for(int counter = 0; counter < container.getChildCount(); counter++) {
+                    if(container.getChildAt(counter) instanceof EditText)
+                    ingredients.add(((EditText) container.getChildAt(counter)).getText().toString());
+                }
+
                 Intent intent = new Intent(IngredientsUpload.this, Upload.class);
                 bundle.putStringArrayList("ingredientList", ingredients);
                 intent.putExtras(bundle);

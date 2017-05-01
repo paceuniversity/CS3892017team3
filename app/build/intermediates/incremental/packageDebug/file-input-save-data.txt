@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Apr 30 15:17:05 EDT 2017
+#Sun Apr 30 16:21:04 EDT 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png
 14.set=ANDROID_RESOURCE

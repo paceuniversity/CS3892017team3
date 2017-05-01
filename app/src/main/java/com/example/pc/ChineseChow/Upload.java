@@ -69,7 +69,6 @@ public class Upload extends Activity {
 
 
 
-
         });
 
     }
@@ -101,7 +100,6 @@ public class Upload extends Activity {
                     progressdialog.dismiss();
 
                     @SuppressWarnings("VisibleForTests") Uri fromgallary  = taskSnapshot.getDownloadUrl();
-
 
 
                     DatabaseReference newpost = databaseReference.push();
