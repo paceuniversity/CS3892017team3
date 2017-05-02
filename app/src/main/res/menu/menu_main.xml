@@ -3,4 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.pc.ChineseChow.MainActivity">
 
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@mipmap/ic_search"
+        android:title="search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@mipmap/ic_add"
+        android:title="add"
+        app:showAsAction="ifRoom"/>
 </menu>

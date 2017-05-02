@@ -1,18 +1,50 @@
 [
     {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\menu\\navigation.xml"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_navigation_drawer.xml",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\menu\\activity_navigation_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_search.xml",
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\menu\\menu_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_navigation_drawer.xml",
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\menu\\activity_navigation_drawer.xml"
     },
     {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_navigation_drawer.xml",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\menu\\activity_navigation_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\menu\\navigation.xml"
     },
     {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_search.xml",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\menu\\menu_search.xml"
+    },
+    {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_search.xml",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\menu\\menu_search.xml"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\menu\\navigation.xml"
     }
 ]

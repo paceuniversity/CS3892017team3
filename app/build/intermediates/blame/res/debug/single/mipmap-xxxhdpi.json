@@ -2,5 +2,37 @@
     {
         "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_search.png",
+        "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_add.png",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_search.png",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_search.png",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_add.png",
+        "source": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_add.png",
+        "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

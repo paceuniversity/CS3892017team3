@@ -133,7 +133,7 @@ public class Upload extends Activity {
         Recipe r = new Recipe();
 
 
-        r.setIngredients(getIngredients);
+        r.setIngredientsList(getIngredients);
         r.setRecipeName(getrecipeName);
         r.setCookTime(getcookTime);
         r.setPrepTime(getprepTime);

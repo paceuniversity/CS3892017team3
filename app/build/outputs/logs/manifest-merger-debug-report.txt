@@ -118,14 +118,14 @@ MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Daniel\.android
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:21:9-40
 	android:name
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:16:9-38
-activity#com.example.pc.ChineseChow.MainActivity
+activity#com.example.pc.ChineseChow.RecipeFeed
 ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:24:9-33:20
 	android:label
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:26:13-45
 	android:theme
-		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:27:13-56
+		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:25:13-39
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
@@ -156,10 +156,10 @@ activity#com.example.pc.ChineseChow.GoogleSignIn
 ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:41:9-50
 	android:name
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:41:19-47
-activity#com.example.pc.ChineseChow.RecipeFeed
-ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:42:9-48
+activity#com.example.pc.ChineseChow.MainActivity
+ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:42:9-50
 	android:name
-		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:42:19-45
+		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:42:19-47
 activity#com.example.pc.ChineseChow.ViewRecipeInSearch
 ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:43:9-56
 	android:name
