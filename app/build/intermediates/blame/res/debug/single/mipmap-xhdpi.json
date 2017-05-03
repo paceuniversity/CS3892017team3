@@ -4,8 +4,20 @@
         "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xhdpi\\ic_search.png"
     },
     {
+        "merged": "D:\\2017spring\\CS389\\foodappfinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_photo_size_select_actual.png",
+        "source": "D:\\2017spring\\CS389\\foodappfinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_photo_size_select_actual.png"
+    },
+    {
         "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
         "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodappfinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\2017spring\\CS389\\foodappfinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\2017spring\\CS389\\foodappfinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_search.png",
+        "source": "D:\\2017spring\\CS389\\foodappfinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_search.png"
     },
     {
         "merged": "C:\\Users\\Daniel\\Desktop\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_search.png",
@@ -34,5 +46,9 @@
     {
         "merged": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_search.png",
         "source": "D:\\2017spring\\CS389\\foodapp0501\\CS3892017team3-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_photo_size_select_actual.png",
+        "source": "C:\\Users\\Daniel\\Documents\\GitHub\\app\\src\\main\\res\\mipmap-xhdpi\\ic_photo_size_select_actual.png"
     }
 ]

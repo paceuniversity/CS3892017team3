@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml
@@ -80,7 +80,7 @@ ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:13:
 	android:name
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:13:22-77
 application
-ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:15:5-48:19
+ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:15:5-49:19
 MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\Daniel\.android\build-cache\d9511a3c76389abcab617f93bd3e280e0e8a71b0\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:25.0.1] C:\Users\Daniel\.android\build-cache\210edcd8f4ea37350d9ba24c378a26e382580801\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.0.1] C:\Users\Daniel\.android\build-cache\66184fda94c8621632ae5db938c955bd5ea0e59d\output\AndroidManifest.xml:22:5-20
@@ -180,6 +180,10 @@ activity#com.example.pc.ChineseChow.IngredientsUpload
 ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:47:9-55
 	android:name
 		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:47:19-52
+activity#com.example.pc.ChineseChow.ViewRecipeInFeed
+ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:48:9-63
+	android:name
+		ADDED from C:\Users\Daniel\Documents\GitHub\app\src\main\AndroidManifest.xml:48:19-51
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:10.2.0] C:\Users\Daniel\.android\build-cache\2b088f68a64ea7dc1cc2575e7a9e6dfca4e264b3\output\AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
