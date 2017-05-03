@@ -9,7 +9,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_image_in_view_search"
+        />
     <TextView
         android:id="@+id/recipeName"
         android:layout_width="match_parent"

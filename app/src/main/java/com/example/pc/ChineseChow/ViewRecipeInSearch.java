@@ -35,6 +35,7 @@ public class ViewRecipeInSearch extends Activity {
     ImageView image;
     Context context;
 
+
     ImageView recipeImg;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,7 +47,7 @@ public class ViewRecipeInSearch extends Activity {
 
         nameofRecipe = (TextView) (findViewById(R.id.textView));
         cookTime = (TextView) (findViewById(R.id.textView2)) ;
-        image = (ImageView)findViewById(R.id.iv_image_recipe);
+        image = (ImageView)findViewById(R.id.im_image_in_view_search);
         nameofRecipe = (TextView) (findViewById(R.id.recipeName));
         cookTime = (TextView) (findViewById(R.id.cookTime));
         prepTime = (TextView) (findViewById(R.id.prepTime));
@@ -67,12 +68,16 @@ public class ViewRecipeInSearch extends Activity {
         databaseReference.orderByChild("recipeName").equalTo(Search.recipeName).addChildEventListener(new ChildEventListener() {
             public void onChildAdded(com.google.firebase.database.DataSnapshot dataSnapshot, String s) {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
+
                 nameofRecipe.setText(value.getRecipeName());
                 cookTime.setText(value.getCookTime());
-                Picasso.with(getApplicationContext()).load(value.getImageUri()).into(image);
-
                 prepTime.setText(value.getPrepTime());
-                recipeSteps.setText(value.getRecipeSteps());
+
+                Picasso.with(getApplicationContext()).load(value.getImageUri()).into(image);
+                
+
+
+                //recipeSteps.setText(value.getRecipeSteps());
                 //ingredients.setText(value.getIngredients());
 
 
@@ -103,6 +108,7 @@ public class ViewRecipeInSearch extends Activity {
 
             }
         });
+
 
 
 

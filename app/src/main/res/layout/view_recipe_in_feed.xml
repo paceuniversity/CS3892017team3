@@ -22,6 +22,27 @@
         android:textSize="50sp"
         android:text="Recipe Name"
         />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+       />
+    <TextView
+        android:paddingTop="16dp"
+        android:id="@+id/tv_preptime_in_view_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:text="Preptimeandcooktime"
+        android:paddingBottom="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
 </LinearLayout>
 </ScrollView>
