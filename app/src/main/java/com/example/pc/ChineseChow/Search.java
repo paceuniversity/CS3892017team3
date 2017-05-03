@@ -7,6 +7,7 @@ import android.content.Context;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -22,6 +23,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Search extends AppCompatActivity {
 
@@ -30,13 +34,15 @@ public class Search extends AppCompatActivity {
     public ArrayAdapter<String> adapter;
     private ArrayList<String> recipeNames = new ArrayList<String>();
     public static String recipeName;
+    List<Recipe> recipes = new ArrayList<>();
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
          ListView lv = (ListView) findViewById(R.id.ListView);
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, recipeNames);
+        adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, recipeNames);
 
 
          DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
@@ -46,9 +52,38 @@ public class Search extends AppCompatActivity {
         databaseReference.orderByChild("recipeName").addChildEventListener(new ChildEventListener() {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
-
                 recipeNames.add(value.getRecipeName());
                 adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        databaseReference.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                Recipe recipe = dataSnapshot.getValue(Recipe.class);
+                recipes.add(recipe);
+
+
             }
 
             @Override
@@ -105,6 +140,7 @@ public class Search extends AppCompatActivity {
 
 
 
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -113,10 +149,33 @@ public class Search extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                String[] ingredients = newText.split(",");
+                for(Recipe recipe : recipes) {
+                    for (int counter = 0; counter < ingredients.length; counter++) {
+                        if ((recipe.getIngredientsList().get(counter)).contains(ingredients[counter])) {
+                            adapter.getFilter().filter(recipe.getRecipeName());
+                        }
+                    }
+                }
                 adapter.getFilter().filter(newText);
+
+
                 return false;
+
+
             }
         });
         return super.onCreateOptionsMenu(menu);
+
+
     }
+    public Object getKeyFromValue(Map map, List value) {
+        for (Object o : map.keySet()) {
+            if (map.get(o).equals(value)) {
+                return o;
+            }
+        }
+        return null;
+    }
+
 }
