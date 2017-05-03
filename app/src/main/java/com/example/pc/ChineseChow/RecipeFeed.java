@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,8 +20,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
 /**
- * Created by Turmateniri on 4/19/2017.
+ * Created by Ted li on 4/19/2017.
  */
 
 public class RecipeFeed extends AppCompatActivity {
@@ -27,12 +31,14 @@ public class RecipeFeed extends AppCompatActivity {
     private RecyclerView mRecipe_list;
     private LinearLayoutManager mLayoutManager;
     private DatabaseReference mdatabase;
-
+    public static List<String> recipe_name_from_feed;
+    public static int static_position;
+    FirebaseRecyclerAdapter<Recipe, RecipeFeed.RecipeViewHolder> firebaseRecyclerAdapter;
     @Override
     protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<Recipe, RecipeFeed.RecipeViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Recipe, RecipeFeed.RecipeViewHolder>(
+         firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Recipe, RecipeFeed.RecipeViewHolder>(
 
                 Recipe.class,
                 R.layout.recipe_list,
@@ -42,9 +48,24 @@ public class RecipeFeed extends AppCompatActivity {
         ) {
 
             @Override
-            protected void populateViewHolder(RecipeFeed.RecipeViewHolder viewHolder, Recipe model, int position) {
+            protected void populateViewHolder(RecipeFeed.RecipeViewHolder viewHolder, final Recipe model, int position) {
                 viewHolder.setRecipename(model.getRecipeName());
                 viewHolder.setImage(getApplicationContext(), model.getImageUri());
+                viewHolder.mView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(RecipeFeed.this,ViewRecipeInFeed.class);
+                        intent.putExtra("name",model.getRecipeName());
+                        intent.putExtra("url", model.getImageUri());
+                        intent.putExtra("cooktime", model.getCookTime());
+                        intent.putExtra("preptime", model.getPrepTime());
+                        intent.putExtra("steps", model.getRecipeSteps());
+
+                        startActivity(intent);
+                    }
+                });
+
+
             }
         };
         mRecipe_list.setAdapter(firebaseRecyclerAdapter);
@@ -65,6 +86,10 @@ public class RecipeFeed extends AppCompatActivity {
 
 
         Firebase.setAndroidContext(this);
+
+
+
+
 
     }
 
@@ -109,4 +134,7 @@ public class RecipeFeed extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }

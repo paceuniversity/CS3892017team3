@@ -45,6 +45,7 @@
         <activity android:name=".CookPrepUpload" />
         <activity android:name=".ImgUpload" />
         <activity android:name=".IngredientsUpload" />
+        <activity android:name=".ViewRecipeInFeed"></activity>
     </application>
 
 </manifest>
