@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -70,6 +71,7 @@ public class ViewRecipeInSearch extends Activity {
                 nameofRecipe.setText(value.getRecipeName());
                 cookTime.setText(value.getCookTime());
                 Picasso.with(getApplicationContext()).load(value.getImageUri()).into(image);
+                Log.e(value.getImageUri(),"image url");
 
                 prepTime.setText(value.getPrepTime());
                 recipeSteps.setText(value.getRecipeSteps());

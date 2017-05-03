@@ -41,7 +41,7 @@ public class Search extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, recipeNames);
 
 
-         DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
+         final DatabaseReference databaseReference =  FirebaseDatabase.getInstance().getReferenceFromUrl("https://homechefparty-e0f77.firebaseio.com/Recipes");
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -49,6 +49,7 @@ public class Search extends AppCompatActivity {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Recipe value = dataSnapshot.getValue(Recipe.class);
                 recipeNames.add(value.getRecipeName());
+
                 recipes.add(value);
                 adapter.notifyDataSetChanged();
             }
@@ -73,6 +74,33 @@ public class Search extends AppCompatActivity {
 
             }
         });
+        databaseReference.orderByChild("Ingredients").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                Recipe recipe = dataSnapshot.getValue(Recipe.class);
+                dataSnapshot.getChildren();
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        })
 
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -115,13 +143,13 @@ public class Search extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                String[] ingredients = newText.split(",");
+               String[] ingredients = newText.split(",");
                 for(Recipe recipe : recipes) {
-                    for (int counter = 0; counter < ingredients.length; counter++) {
-                        if ((recipe.getIngredientsList().get(counter)).contains(ingredients[counter])) {
-                            adapter.getFilter().filter(recipe.getRecipeName());
-                        }
-                    }
+                   for (int counter = 0; counter < ingredients.length; counter++) {
+                      if ((recipe.getIngredientsList().get(counter)).contains(ingredients[counter])) {
+                         adapter.getFilter().filter(recipe.getRecipeName());
+                      }
+                   }
                 }
                 adapter.getFilter().filter(newText);
                 return false;
